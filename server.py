@@ -19,7 +19,10 @@ if not API_KEY:
         pass
 
 if not API_KEY:
-    raise ValueError("Error: La variable de entorno VIRUSTOTAL_API_KEY no está configurada.")
+    raise ValueError(
+        "Error: La variable de entorno VIRUSTOTAL_API_KEY no está configurada. "
+        "Verifica que tu archivo .env tenga el formato correcto (CLAVE=VALOR) o define la variable en tu sistema."
+    )
 
 # --- Helpers y Lógica de Formateo ---
 
